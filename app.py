@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
 # Only needed for access to command line arguments
 import sys
@@ -8,8 +8,8 @@ import sys
 # If you know you won't use command line arguments QApplication([]) works too.
 app = QApplication(sys.argv)
 
-# Create a Qt Push Button, which will be our window.
-window = QPushButton("Push Me")
+# Create a Qt Main Window, which will be our window.
+window = QMainWindow()
 window.show()  # IMPORTANT!!!!! Windows are hidden by default.
 
 # Start the event loop.
