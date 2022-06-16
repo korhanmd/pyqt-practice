@@ -8,11 +8,15 @@ class MainWindow(QMainWindow):
 		super().__init__()
 
 		self.setWindowTitle("My App")
+
 		button = QPushButton("Press Me!")
 
 		self.setFixedSize(QSize(400, 300))
 
 		self.setCentralWidget(button)
+
+	def the_button_was_clicked(self):
+		print("Clicked")
 
 app = QApplication(sys.argv)
 
