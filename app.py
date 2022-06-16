@@ -10,6 +10,8 @@ class MainWindow(QMainWindow):
 		self.setWindowTitle("My App")
 
 		button = QPushButton("Press Me!")
+		button.setCheckable(True)
+		button.clicked.connect(self.the_button_was_clicked)
 
 		self.setFixedSize(QSize(400, 300))
 
