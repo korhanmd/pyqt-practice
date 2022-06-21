@@ -26,7 +26,9 @@ class MainWindow(QMainWindow):
 		print("Clicked")
 
 	def the_button_was_toggled(self, checked):
-		print("Checked?", checked)
+		self.button_is_checked = checked
+
+		print(self.button_is_checked)
 
 app = QApplication(sys.argv)
 
