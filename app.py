@@ -18,6 +18,8 @@ class MainWindow(QMainWindow):
 		self.button.setText("You already clicked me.")
 		self.button.setEnabled(False)
 
+		self.setWindowTitle("My Oneshot App")
+
 app = QApplication(sys.argv)
 
 window = MainWindow()
