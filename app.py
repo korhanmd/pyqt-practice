@@ -18,8 +18,6 @@ class MainWindow(QMainWindow):
 
 		button.setChecked(self.button_is_checked)
 
-		self.setFixedSize(QSize(400, 300))
-
 		self.setCentralWidget(button)
 
 	def the_button_was_clicked(self):
