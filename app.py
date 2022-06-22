@@ -1,7 +1,19 @@
 import sys
+from random import choice
 
-from PyQt5.QtCore import QSize, Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+
+window_titles = [
+	'My App',
+    'My App',
+    'Still My App',
+    'Still My App',
+    'What on earth',
+    'What on earth',
+    'This is surprising',
+    'This is surprising',
+    'Something went wrong'
+]
 
 class MainWindow(QMainWindow):
 	def __init__(self):
@@ -15,10 +27,11 @@ class MainWindow(QMainWindow):
 		self.setCentralWidget(self.button)
 
 	def the_button_was_clicked(self):
-		self.button.setText("You already clicked me.")
-		self.button.setEnabled(False)
+		print("Clicked!")
+		new_window_title = choice(window_titles)
 
-		self.setWindowTitle("My Oneshot App")
+		print("Setting title: %s" % new_window_title)
+		self.setWindowTitle(new_window_title)
 
 app = QApplication(sys.argv)
 
