@@ -38,6 +38,9 @@ class MainWindow(QMainWindow):
 	def the_window_title_changed(self, window_title):
 		print("Window title changed: %s" % window_title)
 
+		if window_title == "Something went wrong":
+			self.button.setDisabled(True)
+
 app = QApplication(sys.argv)
 
 window = MainWindow()
