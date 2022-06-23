@@ -11,6 +11,8 @@ class MainWindow(QMainWindow):
         self.label = QLabel()
         self.input = QLineEdit()
 
+        self.input.textChanged.connect(self.label.setText)
+
         layout = QVBoxLayout()
         layout.addWidget(self.input)
         layout.addWidget(self.label)
