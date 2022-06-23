@@ -11,6 +11,11 @@ class MainWindow(QMainWindow):
         self.label = QLabel()
         self.input = QLineEdit()
 
+        layout = QVBoxLayout()
+        layout.addWidget(self.input)
+        layout.addWidget(self.label)
+
+
 app = QApplication(sys.argv)
 
 window = MainWindow()
