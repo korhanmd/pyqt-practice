@@ -2,12 +2,14 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QVBoxL
 
 import sys
 
-
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
         self.setWindowTitle("My App")
+
+        self.label = QLabel()
+        self.input = QLineEdit()
 
 app = QApplication(sys.argv)
 
