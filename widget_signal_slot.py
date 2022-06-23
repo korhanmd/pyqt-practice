@@ -15,6 +15,11 @@ class MainWindow(QMainWindow):
         layout.addWidget(self.input)
         layout.addWidget(self.label)
 
+        container = QWidget()
+        container.setLayout(layout)
+
+        self.setCentralWidget(container)
+
 
 app = QApplication(sys.argv)
 
