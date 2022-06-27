@@ -1,6 +1,6 @@
 import sys
 
-#from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow, QTextEdit
 
 
@@ -9,6 +9,9 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.label = QLabel("Click in this window")
         self.setCentralWidget(self.label)
+
+    def mouseMoveEvent(self, e):
+        self.label.setText("mouseMoveEvent")
 
 app = QApplication(sys.argv)
 
