@@ -13,6 +13,9 @@ class MainWindow(QMainWindow):
     def mouseMoveEvent(self, e):
         self.label.setText("mouseMoveEvent")
 
+    def mousePressEvent(self, e):
+        self.label.setText("mousePressEvent")
+
 app = QApplication(sys.argv)
 
 window = MainWindow()
