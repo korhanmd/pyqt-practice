@@ -19,6 +19,9 @@ class MainWindow(QMainWindow):
     def mouseReleaseEvent(self, e):
         self.label.setText("mouseReleaseEvent")
 
+    def mouseDoubleClickEvent(self, e):
+        self.label.setText("mouseDoubleClickEvent")
+
 app = QApplication(sys.argv)
 
 window = MainWindow()
