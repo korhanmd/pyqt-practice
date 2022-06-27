@@ -12,7 +12,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.label)
 
     def mouseMoveEvent(self, e):
-        self.label.setText("mouseMoveEvent")
+        self.label.setText("mouseMoveEvent: (%d, %d)" % (e.x(), e.y()))
 
     def mousePressEvent(self, e):
         if e.button() == Qt.LeftButton:
