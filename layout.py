@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout
 from PyQt5.QtGui import QPalette, QColor
 
 class Color(QWidget):
@@ -19,7 +19,12 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("My App")
 
-        widget = Color('red')
+        layout = QVBoxLayout()
+        layout.addWidget(Color('red'))
+
+        widget = QWidget()
+        widget.setLayout(layout)
+
         self.setCentralWidget(widget)
 
 
