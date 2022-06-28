@@ -19,6 +19,9 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("My App")
 
+        widget = Color('red')
+        self.setCentralWidget(widget)
+
 
 app = QApplication(sys.argv)
 
