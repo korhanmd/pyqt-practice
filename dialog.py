@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QDialog
 
 
 class MainWindow(QMainWindow):
@@ -15,6 +15,10 @@ class MainWindow(QMainWindow):
 
     def button_clicked(self, s):
         print("click", s)
+
+        dlg = QDialog(self)
+        dlg.setWindowTitle("Hello!")
+        dlg.exec()
 
 
 app = QApplication(sys.argv)
