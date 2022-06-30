@@ -31,12 +31,19 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(button)
 
     def button_clicked(self, s):
-        button = QMessageBox.question(self, "I have a question!", "This is a simple dialog")
+        button = QMessageBox.critical(
+            self,
+            "Oh dear!",
+            "Something went very wrong.",
+            buttons=QMessageBox.Discard | QMessageBox.NoToAll | QMessageBox.Ignore,
+            defaultButton=QMessageBox.Discard)
 
-        if button == QMessageBox.Yes:
-            print("Yes!")
+        if button == QMessageBox.Discard:
+            print("Discard!")
+        elif button == QMessageBox.NoToAll:
+            print("No to all!")
         else:
-            print("No!")
+            print("Ignore!")
 
 
 app = QApplication(sys.argv)
