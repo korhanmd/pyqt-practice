@@ -39,6 +39,8 @@ class MainWindow(QMainWindow):
         toolbar.addWidget(QLabel("Hello"))
         toolbar.addWidget(QCheckBox())
 
+        self.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+
         self.setStatusBar(QStatusBar(self))
 
     def onMyToolBarButtonClick(self, s):
