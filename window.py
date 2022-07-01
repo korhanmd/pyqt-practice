@@ -31,6 +31,7 @@ class MainWindow(QMainWindow):
             self.w.show()
         
         else:
+            self.w.close()
             self.w = None
 
 
