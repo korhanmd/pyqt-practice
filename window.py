@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QVBo
 
 import sys
 
+from random import randint
 
 class AnotherWindow(QWidget):
     """
@@ -11,7 +12,7 @@ class AnotherWindow(QWidget):
     def __init__(self):
         super().__init__()
         layout = QVBoxLayout()
-        self.label = QLabel("Another Window")
+        self.label = QLabel("Another Window % d" % randint(0, 100))
         layout.addWidget(self.label)
         self.setLayout(layout)
 
