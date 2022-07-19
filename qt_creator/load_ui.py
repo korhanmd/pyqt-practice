@@ -1,8 +1,15 @@
 import sys
-from PyQt5 import QtWidgets, uic
+from PyQt5 import QtCore, QtGui, QtWidgets, uic
+
+class MainWindow(QtWidgets.QMainWindow):
+
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
+		uic.loadUi("mainwindow.ui", self)
+		
 
 app = QtWidgets.QApplication(sys.argv)
 
-window = uic.loadUi("mainwindow.ui")
+window = MainWindow()
 window.show()
 app.exec()
