@@ -90,6 +90,14 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>dateEdit</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>comboBox_2</tabstop>
+  <tabstop>doubleSpinBox</tabstop>
+  <tabstop>textEdit</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
