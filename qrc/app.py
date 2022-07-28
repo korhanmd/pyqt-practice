@@ -11,7 +11,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setWindowTitle("Hello World")
         self.button = QtWidgets.QPushButton("My button")
 
-        icon = QtGui.QIcon("animal-penguin.png")
+        icon = QtGui.QIcon(":/icons/penguin.png")
         self.button.setIcon(icon)
         self.button.clicked.connect(self.change_icon)
 
@@ -20,7 +20,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.show()
 
     def change_icon(self):
-        icon = QtGui.QIcon("animal-monkey.png")
+        icon = QtGui.QIcon(":/icons/monkey.png")
         self.button.setIcon(icon)
 
 
