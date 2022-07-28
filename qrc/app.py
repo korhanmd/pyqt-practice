@@ -2,6 +2,8 @@ import sys
 
 from PyQt5 import QtGui, QtWidgets
 
+import resources
+
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
