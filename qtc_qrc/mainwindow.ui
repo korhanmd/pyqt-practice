@@ -29,6 +29,10 @@
         <property name="text">
          <string>Increment</string>
         </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+        </property>
        </widget>
       </item>
       <item>
@@ -36,12 +40,20 @@
         <property name="text">
          <string>Decrement</string>
         </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="btn_reset">
         <property name="text">
          <string>Reset</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/return.png</normaloff>:/icons/return.png</iconset>
         </property>
        </widget>
       </item>
@@ -61,6 +73,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
